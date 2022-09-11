@@ -49,9 +49,7 @@ struct ExtractedView: View {
             Circle().frame(width: 100, height: 100).foregroundColor(.green)
             Text("\(num)").font(.largeTitle)
                 .onTapGesture {
-                    num = number1
-                    number1 = number2
-                    number2 = number3
+                    num+=1
                 }
         }
     }
